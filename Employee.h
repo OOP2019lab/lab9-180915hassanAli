@@ -10,6 +10,10 @@ class Employee
 {
 	char* emp_name; 
 	//Add Data Members here
+	Project const **  Projects;
+	int ProjectCount;
+	int ProjectCap;
+	Address address;
 	
 public:
 	Employee(char* name, const Address&);

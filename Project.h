@@ -16,9 +16,12 @@ public:
 	//copy constructor
 	friend ostream& operator<<(ostream& osObject, const Project&);
 	//overloaded insertion operator
-	const Project &   operator=(const Project& other);
+	const Project &  operator=(const Project& other);
+	
 	//overloaded assignment operator
 	void setBudget(int); 
+	bool operator==(const Project& other);
+	friend bool operator==(const Project& A,const Project& B);
 	~Project();
 }; 
 #endif

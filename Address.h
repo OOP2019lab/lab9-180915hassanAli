@@ -1,6 +1,6 @@
 //Address.h
 #include <iostream>
-using namespace std;
+
 
 
 #ifndef ADDRESS_H
@@ -17,7 +17,7 @@ public:
 	// an overloaded constructor
 	Address(const Address&);
 	//copy constructor
-	friend ostream& operator<<(ostream& osObject, const Address&);
+	friend std::ostream& operator<<(std::ostream& osObject, const Address&);
 	//overloaded insertion operator
 	const Address &   operator=(const Address& other);
 	//overloaded assignment operator
